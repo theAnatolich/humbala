@@ -19,9 +19,9 @@ public class Task {
     catch(IOException ex) {
       System.out.println("Error reading file");
     }
-    String outFile = "out.log";
+    String out = "out.log";
     try {
-      FileWriter fileWriter =new FileWriter(outFile);
+      FileWriter fileWriter =new FileWriter(out);
       BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
       String result = text
                         .replaceAll(" 0 ", " null ")
